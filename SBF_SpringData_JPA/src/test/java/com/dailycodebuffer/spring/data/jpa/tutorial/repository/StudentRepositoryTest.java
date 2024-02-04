@@ -4,11 +4,23 @@ import com.dailycodebuffer.spring.data.jpa.tutorial.entity.Guardian;
 import com.dailycodebuffer.spring.data.jpa.tutorial.entity.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
 @SpringBootTest
+
+
+//@DataJpaTest 
+//* Using this annotation will disable full auto-configuration and instead apply only
+//* configuration relevant to JPA tests.
+//Use this annotation only when you don't want to make any changes at DB level ? --> Explore in details about it.
+//We are not using it here..as we want out test to modify the DB if we want..
+
+
+
+
 class StudentRepositoryTest {
 
     @Autowired
