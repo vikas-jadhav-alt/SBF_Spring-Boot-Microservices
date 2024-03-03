@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"akshay\",\r\n    \"password\": \"kumar123\",\r\n    \"email\": \"xyz@gmail.com\",\r\n    \"role\":[\"ROLE_XYZ\"]\r\n}",
+					"raw": "{\r\n    \"username\": \"mohit\",\r\n    \"password\": \"mohit123\",\r\n    \"email\": \"mc@gmail.com\",\r\n    \"role\":[\"admin\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,7 +42,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"akshay\",\r\n    \"password\": \"kumar123\",\r\n    \"email\": \"xyz@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"username\": \"akshay\",\r\n    \"password\": \"akshay123\",\r\n    \"email\": \"ak@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
