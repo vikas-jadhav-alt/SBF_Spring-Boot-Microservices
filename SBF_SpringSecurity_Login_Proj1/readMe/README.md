@@ -225,3 +225,7 @@ eclipse:eclipse -DdownloadSources -DskipTests=false clean install
 
 # PostMan API Test To Import:
 > ![Login DB 1.postman_collection.json](Login DB 1.postman_collection.json)
+
+
+# Swagger URL:
+http://localhost:8080/swagger-ui/index.html
