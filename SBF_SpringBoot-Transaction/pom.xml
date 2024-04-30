@@ -8,5 +8,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>projA1_proxy_desing_pattern</module>
+		<module>projB1_transaction_propagation</module>
+		<module>projB1_transaction_isolation</module>
 	</modules>
 </project>
