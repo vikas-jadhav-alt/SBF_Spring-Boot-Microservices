@@ -44,6 +44,11 @@ public class AuthTokenFilter extends OncePerRequestFilter {
         
         authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 
+		// We are setting it in SecurityContextHolder..here avove we have successfully
+		// done the AUTEHNTICATION..
+		// ...not we have to do authorization..for that we will call AUTHORIZATION
+		// MANAGER.
+		// Authorization Manager is ussually the last in order in all filters...
         SecurityContextHolder.getContext().setAuthentication(authentication);
       }
     } catch (Exception e) {
