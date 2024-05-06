@@ -18,7 +18,8 @@
 #ignore bin, target  => folder found anywhere
 **/bin/
 **/target/
-
+**/.mvn/
+**/mvnw**
 
  
 
