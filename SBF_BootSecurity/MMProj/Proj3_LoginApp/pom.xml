@@ -14,13 +14,13 @@
 
 	<parent>
 		<groupId>com.vcoder</groupId>
-		<artifactId>SBF_Spring_Boot_Security</artifactId>
+		<artifactId>BootSecurityMMProj1</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.vcoder</groupId>
 	<artifactId>login-ex</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-login-example</name>
+	<name>Proj3_LoginApp</name>
 	<description>Spring Boot Login example with Spring Security, JWT and MySQL -
 		Rest API</description>
 	<properties>
