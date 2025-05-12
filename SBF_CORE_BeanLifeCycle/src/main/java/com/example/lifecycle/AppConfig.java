@@ -4,6 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 @Configuration
 @ComponentScan("com.example.lifecycle")
 public class AppConfig {
@@ -22,17 +25,17 @@ public class AppConfig {
 		return new ABB_Bean();
 	}
 
-	@Bean
-	public SetterDependency setterDependency() {
-		System.out.println("### AppConfig.setterDependency() called");
-		return new SetterDependency();
-	}
-
-	@Bean
-	public SetterDependency2 setterDependency2() {
-		System.out.println("### AppConfig.setterDependency2() called");
-		return new SetterDependency2();
-	}
+//	@Bean
+//	public SetterDependency setterDependency() {
+//		System.out.println("### AppConfig.setterDependency() called");
+//		return new SetterDependency();
+//	}
+//
+//	@Bean
+//	public SetterDependency2 setterDependency2() {
+//		System.out.println("### AppConfig.setterDependency2() called");
+//		return new SetterDependency2();
+//	}
 
 	@Bean
 	public SetterDependency3 setterDependency3() {
@@ -50,5 +53,15 @@ public class AppConfig {
 	public ConstructorDependency2 constructorDependency2() {
 		System.out.println("### AppConfig.constructorDependency2() called");
 		return new ConstructorDependency2();
+	}
+
+	@PostConstruct
+	public void postConstruct() {
+		System.out.println("-- ### AppConfig :: @PostConstruct called");
+	}
+
+	@PreDestroy
+	public void preDestroy() {
+		System.out.println("-- ### AppConfig :: @PreDestroy called");
 	}
 }

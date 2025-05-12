@@ -4,6 +4,9 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 @Component
 public class MyPostProcessor implements BeanPostProcessor {
 
@@ -33,5 +36,15 @@ public class MyPostProcessor implements BeanPostProcessor {
 		System.out.println(">> BeanPostProcessor:Other: AFTER initialization of " + beanName);
 
 		return bean;
+	}
+	
+	@PostConstruct
+	public void postConstruct() {
+		System.out.println("-- MyPostProcessor :: @PostConstruct called");
+	}
+
+	@PreDestroy
+	public void preDestroy() {
+		System.out.println("-- MyPostProcessor :: @PreDestroy called");
 	}
 }
